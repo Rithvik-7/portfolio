@@ -1,0 +1,679 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Grape+Nuts&family=Iceland&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* avoids overflow issues */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: #000000;
+}
+
+#navv{
+    position: fixed;
+    top: 0;
+    left: 0;
+     background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid hsla(221, 22%, 80%, 0.5); /* faded border */
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+    
+    
+}
+.ni a {
+  color: rgb(176, 181, 192);
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+  font-family: "Iceland", sans-serif;
+}
+
+
+.ni a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #faffed;
+  transition: width 0.3s ease;
+}
+
+.ni a:hover::after {
+  width: 100%;  
+}
+
+.ni a:hover {
+  color: #faedcd;  
+}
+
+#name{
+    font-size: 1.7em;
+}
+
+.hero {
+   background: linear-gradient(120deg, #ff512f, #dd2476, #1c1e84, #35359f, #181b36);
+  width: 100vw;
+  height: 100vh;
+  color: #faffed;
+}
+#r1{
+    height: 28vh;
+}
+#con{
+    height: 70vh; 
+    
+   margin-left: 5vw;
+    
+    
+   
+   
+   
+}
+#hey{
+    display: inline-block;
+    font-size: 4em;
+    letter-spacing: 4px;
+    
+    font-family: 'Fredericka the Great', cursive;
+    
+
+    border-right: white 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(17),
+    cursor 0.8s infinite alternate;
+    
+
+    
+}
+
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 17ch;
+    }
+    
+    
+}
+
+#as{
+    font-size: 1.7em;
+    font-family: "Iceland", sans-serif;
+    
+    color: rgba(255, 255, 255, 0.8);
+
+}
+#sel{
+    font-size: 1.65em;
+    font-family:"Iceland", sans-serif;
+    
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+#bgi{
+    
+    background-image: url("Hand\ coding-bro\ \(1\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+    width: 40vw;
+    height: 55vh;
+    position: absolute;
+    top: 36vh;
+    left: 58vw;
+    
+    
+    
+}
+
+
+/*about me*/
+
+
+#about{
+    
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    
+    
+    color: rgba(250, 255, 237,1);
+    
+
+     background-color: #202188;
+    
+    
+    display: flex;
+    justify-content: center;
+    
+    
+   
+
+    
+}
+
+#abo{
+    
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+    font-size: 2em;
+
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    
+}
+
+#abo:hover{
+    border-bottom:2px solid rgba(255, 255, 255, 0.7);
+}
+    
+
+
+#exa{
+    font-size: 1.7em;
+    font-family:"Iceland", sans-serif;
+    
+    color: rgba(255, 255, 255, 0.7);
+    
+    position: absolute;
+    top: 28vh;
+    left: 5vw;
+    width: 50vw;
+   
+}
+
+
+
+#mypi{
+    width: 30vw;
+    height:70vh;
+    
+    background-size: cover;
+    border-radius: 2%;
+    box-shadow: 0 0 20px rgba(255, 230, 230, 0.038), 0 0 40px rgba(241, 227, 222, 0.27), 0 0 60px rgba(236, 221, 227, 0.236);
+    
+    background-image: url(IMG_20250819_204742_307.jpg);
+    margin-left: 50vw;
+    margin-top: 10vh;
+    
+    
+    
+}
+
+
+/*skills*/
+
+
+
+#skills{
+    width: 100vw;
+    height: 90vh;
+    
+    position: relative;
+    
+    color: rgba(250, 255, 237,1);
+    
+
+     background-color:#202188;
+    
+    
+    
+    
+   
+
+    
+}
+
+
+#ski{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    font-family:'Fredericka the Great', cursive ;
+    font-weight: 100;
+    font-size: 2em;
+    z-index: 10000;
+
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+
+
+}
+
+#ski:hover{
+    border-bottom:2px solid rgba(255, 255, 255, 0.7);
+}
+
+
+
+#skil1{
+    
+    width: 50vw;
+    height: 15vh;
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#skil2{
+   
+    width: 50vw;
+    height: 15vh;
+    position: absolute;
+    top: 55vh;
+    left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.ins{
+    background-color: #ece4e4;
+    width: 10vw;
+    height: 8vh;
+    border-radius: 5%; 
+    box-shadow: 0 0 20px rgba(255, 230, 230, 0.038), 0 0 40px rgba(241, 227, 222, 0.27), 0 0 60px
+     rgba(236, 221, 227, 0.236);
+     display: flex;
+     color: blue;
+     
+     align-items: center;
+    
+    
+
+}
+
+
+.ins:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2), 0 0 50px rgba(255, 255, 255, 0.3), 0 0 70px rgba(255, 255, 255, 0.4);
+    background-color: #e7e9f1;
+}
+
+.logo{font-size: 2.5em;
+color: #454444;}
+
+.lona{
+    font-size: 1.5em;
+    margin-left: 1vw;
+    color: #000000bb;
+    font-family: "Iceland", sans-serif;
+    font-weight: 700;
+}
+
+.hea{
+    position: absolute;
+    top: 23vh;
+    left: 6vw;
+    font-family:'Fredericka the Great' ;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+#mabo{
+    
+    height: 56vh;
+    width: 54vw;
+   border: 1px solid rgba(251, 236, 236, 0.344);
+   background-color: #2f3196;
+    position: absolute;
+    top:20vh;
+    left: 3vw;
+    border-radius: 1rem;
+}
+
+
+#pic2{
+    height: 55vh;
+    width:25vw;
+    background-image: url(Visual\ data-rafiki.png);
+    background-size: cover;
+    position: absolute;
+    top: 18vh;
+    left: 65vw;
+}
+
+
+#mes{
+    position: absolute;
+    top: 79vh;
+    left: 5vw;
+    font-family: "Iceland", sans-serif;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*projects*/
+
+
+#projects{
+    width: 100vw;
+    height: 90vh;
+    
+    position: relative;
+    
+    color: rgba(250, 255, 237,1);
+    
+
+    
+
+    background-color:#202188;
+}
+
+#proh{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    font-family:'Fredericka the Great', cursive ;
+    font-weight: 100;
+    font-size: 2em;
+    z-index: 10000;
+
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+#proh:hover{
+    border-bottom:2px solid rgba(255, 255, 255, 0.7);
+}
+
+
+#pro1{
+    width: 80vw;
+    height: 60vh;
+    position: absolute;
+    top: 22vh;
+    left: 3vw;
+    font-family:'Fredericka the Great', cursive ;
+    font-weight: 100;
+    font-size: 2em;
+   
+
+    border-bottom: 2px solid transparent;
+    
+    background-color: #000000;
+    border: 1px solid rgba(251, 236, 236, 0.344);
+   background-color: #2f3196;
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;   
+    justify-content: space-evenly; 
+
+
+}
+
+.pp{
+    width: 23vw;
+    height: 50vh;
+    background-color: #efefefe7;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.038), 0 0 20px rgba(241, 227, 222, 0.27), 0 0 30px
+     rgba(236, 221, 227, 0.236);
+     border-radius: 1rem;
+}
+
+.pp:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.4);
+    background-color: #e6e6ec;
+    text-align: center;
+    
+    position: relative;
+}
+
+.butt{
+    width: 23vw;
+    height: 50vh;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(29, 27, 27);
+    font-family:  'Grape Nuts', cursive;
+    
+    text-align: center;
+   
+}
+
+.hp{
+     margin-top: 1vh;
+     font-family: "Iceland", sans-serif;
+}
+
+.amz{
+    width: 20vw;
+    height: 22vh;
+    
+    margin-top: 2vh;
+}
+
+.des{
+    font-size: 0.7em;
+    margin-top: 1vh;
+    width: 20vw;
+    margin-left: 1.5vw;
+    color: rgb(50, 50, 50);
+    font-family: "Iceland", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+/*education*/
+
+#education{
+    width: 100vw;
+    height: 60vh;
+    
+    position: relative;
+    
+    color: rgba(250, 255, 237,1);
+    
+
+    background-color:#202188;
+    
+    
+    
+    
+   
+
+    
+}
+
+#edu{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    font-family:'Fredericka the Great', cursive ;
+    font-weight: 100;
+    font-size: 2em;
+   
+
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+#edu:hover{
+    border-bottom:2px solid rgba(255, 255, 255, 0.7);
+}
+
+#ed{
+    width: 80vw;
+    height: 30vh;
+    position: absolute;
+    top: 22vh;
+    left: 3vw;
+    font-family:'Fredericka the Great', cursive ;
+    font-weight: 100;
+    font-size: 2em;
+   
+
+    border-bottom: 2px solid transparent;
+    
+    background-color: #2f3196;
+    border: 1px solid rgba(251, 236, 236, 0.344);
+   
+    border-radius: 1rem;
+
+    display: flex;
+    align-items: center;   
+    justify-content: space-evenly;
+}
+
+#ed:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.4);
+    background-color: #3a3bb1;
+   
+    
+    
+}
+
+/*contact me*/
+#contact{
+    width: 100vw;
+    height: 90vh;
+    
+    position: relative;
+    
+    color: rgba(250, 255, 237,1);
+    
+
+    background-color:#202188;
+    
+    
+    
+    
+   
+
+    
+}
+
+#cone{
+    position: absolute;
+    top: 12vh;
+    left: 5vw;
+    
+    font-family:'Fredericka the Great', cursive ;
+    font-weight: 100;
+    font-size: 2em;
+   
+
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+#cone:hover{
+    border-bottom:2px solid rgba(255, 255, 255, 0.7);
+    
+}
+
+#coon{
+    width: 80vw;
+    height: 25vh;
+    position: relative;
+    top: 22vh;
+    left: 3vw;
+    font-family:  "Iceland", sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+   
+
+    border-bottom: 2px solid transparent;
+    
+    background-color: #2f3196;
+    border: 1px solid rgba(251, 236, 236, 0.344);
+   
+    border-radius: 1rem;
+
+   
+    
+
+
+}
+
+#coon:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 35px rgba(255, 255, 255, 0.4);
+    background-color: #3a3bb1;
+   
+    
+    
+}
+
+
+#out{
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
+
+#fot{
+    width: 100vw;
+    height: 20vh;
+    background-color: #2f3196;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Iceland", sans-serif;
+    position: absolute;
+    top: 70vh;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
