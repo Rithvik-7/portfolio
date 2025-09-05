@@ -537,7 +537,7 @@ color: #454444;}
 
 #ed{
     width: 80vw;
-    height: 30vh;
+    height: 25vh;
     position: absolute;
     top: 22vh;
     left: 3vw;
@@ -564,6 +564,14 @@ color: #454444;}
    
     
     
+}
+
+#ri{
+    position: absolute;
+    top: 4vh;
+    left:3vw;
+    line-height: 1.8;
+    font-family:  "Iceland", sans-serif;
 }
 
 /*contact me*/
@@ -657,6 +665,7 @@ color: #454444;}
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 
 
 
